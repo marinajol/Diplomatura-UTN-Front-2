@@ -89,3 +89,68 @@ Number('a') = NaN /* no tiene valor numérico ese string entonces no lo puede tr
 0.1 + 0.2 = 0.30000000000000004
 
 (0.1 + 0.2).toFixed(2) /* Number of digits after the decimal point. Must be in the range 0 - 20, inclusive, returns a string representing a number in fixed-point notation. */
+
+/* F A L S Y  O  T R U T H Y
+todos los datos que aprendimos hasta ahora se pueden enmarcar en valores verdaderos o en falsos
+
+los verdaderos son infinitos
+
+los falsos:
+0
+-0
+''
+false
+null
+undefined
+Nan
+
+son valores que son considerados false sin ser el false boolean
+aquellos que cuando transformo en booleano me van a dar false
+
+*/
+
+Boolean(-0)= false
+Boolean(8)= true
+Boolean(null)= false
+
+/* C O M P A R A D O R E S 
+siempre devuelven booleanos
+
+== si un dato es igual a otro   solo compara valor, no tipo de dato
+=== estricta igualdad           compara igualdad de valor y de tipo de dato
+!= diferencia
+!== estricta diferencia
+> mayor
+< menor
+>= meyor igual
+<= menor igual
+*/
+
+1 == '1' /* es true porque la comparación no es estricta, el valor numérico de '1' es 1 */
+23 == '23' /* también es verdadero */
+1 == true /* es true */
+0 == null /* es false nulo no es igual a ningún dato */
+/* NaN == NaN es false porque NaN no puede ser comparado a ningún dato */
+
+isNaN(8) /* false - función nativa de javascript, nos devuelve true o false de si el dato que le pasamos es NaN,va a dar true todo lo que tenga valor numérico
+
+isNaN(null)=false */
+
+isNaN('pepe') = true
+
+isNaN(null) /* SI BIEN NULO NUMÉRICAMENTE REPRESENTA 0 ES UNA EXCEPCIÓN DEL LENGUAJE QUE NULO SOLO ES IGUAL A SI MISMO Y A UNDEFINED */
+false
+isNaN(NaN)
+true
+isNaN('pepe')
+true
+isNaN(undefined)
+true
+
+'a' == 'A'
+false /* JS es case sensitive */
+
+'a' > 'b'
+false
+'a' < 'b'
+true /* porque se maneja la comparación con código ascii */
