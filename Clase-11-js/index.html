@@ -30,7 +30,7 @@
     <!-- 
     EJERCICIO           RESULTADO
     
-    '' == false         TRUE, porque comillas vacías es falsy y false es booleano
+    '' == false         TRUE, porque comillas vacías es falsy, y no es comparación estricta
 
     1 !== false         TRUE, 1 es number y false es boolean, es estrictamente distinto
 
@@ -50,11 +50,11 @@
 
     4 - '8'             -4, el menos siempre devuelve números entonces transforma el string en un número y los resta
     
-    null == NaN
+    null == NaN         false, null es igual a sí mismo y a undefined
     
     'pepe' + ''         'pepe'
     
-    Nan + ''
+    Nan + ''            NaN, si algún dato es NaN, el resultado aritmético es NaN
     
     true === 1       falso porque la comparación es estricta y son distintos tipos de datos
 
