@@ -4,6 +4,8 @@ if(edad > 18){
     console.log('soy mayor de edad')
 }
 
+/* INTRODUCCIÓN A JAVASCRIPT */
+
 /* T I P O S   D E   D A T O S   E N   J A V A S C R I P T
 
 Hay dos categorías de datos: primitivos y objeto
